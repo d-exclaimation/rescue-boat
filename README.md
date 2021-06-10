@@ -64,7 +64,7 @@ To deploy, build, or use this project
 
 Clone the source code
 ```bash
-$ git clone // todo: add in the git remote repo url
+$ git clone https://github.com/d-exclaimation/rescue-boat.git
 ```
 Build by running
 
