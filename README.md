@@ -15,7 +15,7 @@ Rescue boat perform 2 task, encapsule files into boats or tubes and rescue file 
 #### Deploy a boat
 
 ```bash
-$ Boat, Tube, or Rescue (b/t/r)? [Boat|b]
+Boat, Tube, or Rescue (b/t/r)? [Boat|b]
 >? <Indices> | <List All>
 // And then keep answering for files or just the simplified list notation
 ```
@@ -28,7 +28,7 @@ $ Boat, Tube, or Rescue (b/t/r)? [Boat|b]
 #### Deploy a tube
 
 ```bash
-$ Boat, Tube, or Rescue (b/t/r)? [Tube|t]
+Boat, Tube, or Rescue (b/t/r)? [Tube|t]
 >? <Index> | <List All>
 // And answer with the correct index
 ```
@@ -47,7 +47,7 @@ be used in retriving
 #### Rescue files
 
 ```bash
-$ Boat, Tube, or Rescue (b/t/r)? [Rescue|r]
+Boat, Tube, or Rescue (b/t/r)? [Rescue|r]
 Select the .rescuetag file? <Rescue tag>
 ```
 
@@ -64,18 +64,18 @@ To deploy, build, or use this project
 
 Clone the source code
 ```bash
-$ git clone https://github.com/d-exclaimation/rescue-boat.git
+git clone https://github.com/d-exclaimation/rescue-boat.git
 ```
 Build by running
 
 ```bash
-$ gradle installDist
+gradle installDist
 ```
 
 or get distributions with
 
 ```bash
-$ gradle build
+gradle build
 ```
 
 Install script maybe coming in the future
