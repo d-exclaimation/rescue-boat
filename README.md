@@ -14,29 +14,29 @@ Rescue boat perform 2 task, encapsule files into boats or tubes and rescue file 
 
 #### Deploy a boat
 
-```bash
-Boat, Tube, or Rescue (b/t/r)? [Boat|b]
->? <Indices> | <List All>
-// And then keep answering for files or just the simplified list notation
+```
+Boat, Tube, or Rescue (b/t/r)? b
+>? [indices] | [list-all]
 ```
 
 | Responses | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `Indices` | `Int / Int[]` | Give files to be boated |
-| `List all`| `String: L`| List all files under the current directory |
+| `indices` | `integer or integers` | Indices of files to be boated |
+| `list-all`| `the letter L`| List all files under the current directory |
+
+**Note** to finish selectiong, just give an invalid input i.e nothing (enter)
 
 #### Deploy a tube
 
 ```bash
-Boat, Tube, or Rescue (b/t/r)? [Tube|t]
->? <Index> | <List All>
-// And answer with the correct index
+Boat, Tube, or Rescue (b/t/r)? t
+>? [index] | [list-all]
 ```
 
 | Responses | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `Index` | `In` | Give file to be tubed |
-| `List all`| `String: L`| List all files under the current directory |
+| `index` | `integer` | Index of file to be tubed |
+| `list-all`| `the letter L`| List all files under the current directory |
 
 
 Both command will ask for recovery directory and create a `.rescuetag` file to 
@@ -47,16 +47,16 @@ be used in retriving
 #### Rescue files
 
 ```bash
-Boat, Tube, or Rescue (b/t/r)? [Rescue|r]
-Select the .rescuetag file? <Rescue tag>
+Boat, Tube, or Rescue (b/t/r)? r
+Select the .rescuetag file? [rescue-tag-path]
 ```
 
 | Responses | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `Rescue tag` | `In` | Path to a `.rescuetag` |
+| `rescue-tag-path` | `file path` | Path to a `.rescuetag` |
 
   
-## Deployment
+## Build and Deployment
 
 The project is using gradle.
 
@@ -78,7 +78,7 @@ or get distributions with
 gradle build
 ```
 
-Install script maybe coming in the future
+_Install script maybe coming in the future or actual binaries, but I made no promises_
 
   
 ## FAQ
