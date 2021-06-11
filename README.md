@@ -93,7 +93,7 @@ This puts me in a position where I have scramble in manually copy pasting files 
 
 I thought it would be fun, Kotlin is statically typed, object-oriented and functional programming language that runs on JVM. 
 It is very convienient using this to take advantage of the massive Java ecosystem in a more functional way.
-I think I want to use it especially when cocurrency is the primary goal which what I have been focusing on with Elixir and Go. 
+I think I want to use it especially when cocurrency is not the primary goal. Cocurrency is definitely a big topic I want to dive more into that's why I choose Go, and Kotlin, but apps I made might not need that level of capabilities and some sacrifice can be made to either get a larger ecosystem (larger than Elixir) or to better user experience (more features than Go)
 I don't have projects in mind yet for Kotlin, and since this is a very small one. I think I can just use whatever. Technically, Go is much better fit for CLIs.
 
 #### Why not Go, Elixir, Typescript, Rust?
