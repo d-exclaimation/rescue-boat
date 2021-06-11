@@ -103,3 +103,25 @@ I don't have projects in mind yet for Kotlin, and since this is a very small one
 - Go: This is probably the best option, but for fun, I decided not to use it
 - Typescript, convienient but will only work well with Node projects unless I want to make binaries
 
+
+## Other shenanigans
+
+#### Can you just use custom .rescuetag and perform the rescue task without having to use boats or tubes?
+
+Short answer: Yes
+
+Long answer: Yes, but it depends
+
+If you 100% going to delete the project but save a bunch of files, it makes sense to make a custom `.rescuetag` that points to the files you want to save, rescue it to the new location and at the same time deleting the old project. 
+However, remember by default project marked with .rescuetag will be deleted after the rescue task. You can go to `rescue-boat/app/src/main/kotlin/rescue/boat/Controller.kt` and delete line `100` to remove this feature, and make like an infinite rescuing mechanism for like copy pasting common files, but at that point a library is better. 
+
+#### .rescuetag Specifications
+
+However, if you are content with using custom `.rescuetag`, here is the spec:
+
+- Line 1: Name of the tag
+- Line 2..end: path to files tracked relative to the parent directory of the `.rescuetag`
+
+_very simple_
+
+Good luck
